@@ -27,3 +27,8 @@ img.attachment-post-thumbnail {
 	width: 100%;
 	height: 100%;
 }
+footer {
+background-color: darkgray;
+padding: 20px;
+margin-top: 20px;
+}
