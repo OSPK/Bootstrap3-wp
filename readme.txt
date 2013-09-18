@@ -25,7 +25,7 @@ __Footer.php__
 
 *   Cleaned up ending div tags
 
-__Functions.php__
+__Functions.php__ 
 
 *   Fixed `bootstrapwp_autoset_featured_img()` function to return if there is no image set, clearing debug errors.
 *   Removed the post hooks for `bootstrap_autoset_featured_img()` function to clear debug errors.
