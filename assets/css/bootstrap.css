@@ -233,6 +233,13 @@ textarea.input-lg{height:auto}
 .btn-block{display:block;width:100%;padding-left:0;padding-right:0}
 .btn-block+.btn-block{margin-top:5px}
 input[type="submit"].btn-block,input[type="reset"].btn-block,input[type="button"].btn-block{width:100%}
+#submit{display:inline-block;padding:6px 12px;margin-bottom:0;font-size:14px;font-weight:normal;line-height:1.428571429;text-align:center;vertical-align:middle;cursor:pointer;border:1px solid transparent;border-radius:4px;white-space:nowrap;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none;color:#fff;background-color:#428bca;border-color:#357ebd}#submit:focus{outline:thin dotted #333;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}
+#submit:hover,#submit:focus{color:#333;text-decoration:none}
+#submit:active,#submit.active{outline:0;background-image:none;-webkit-box-shadow:inset 0 3px 5px rgba(0,0,0,0.125);box-shadow:inset 0 3px 5px rgba(0,0,0,0.125)}
+#submit.disabled,#submit[disabled],fieldset[disabled] #submit{cursor:not-allowed;pointer-events:none;opacity:.65;filter:alpha(opacity=65);-webkit-box-shadow:none;box-shadow:none}
+#submit:hover,#submit:focus,#submit:active,#submit.active,.open .dropdown-toggle#submit{color:#fff;background-color:#3276b1;border-color:#285e8e}
+#submit:active,#submit.active,.open .dropdown-toggle#submit{background-image:none}
+#submit.disabled,#submit[disabled],fieldset[disabled] #submit,#submit.disabled:hover,#submit[disabled]:hover,fieldset[disabled] #submit:hover,#submit.disabled:focus,#submit[disabled]:focus,fieldset[disabled] #submit:focus,#submit.disabled:active,#submit[disabled]:active,fieldset[disabled] #submit:active,#submit.disabled.active,#submit[disabled].active,fieldset[disabled] #submit.active{background-color:#428bca;border-color:#357ebd}
 .fade{opacity:0;-webkit-transition:opacity .15s linear;transition:opacity .15s linear}.fade.in{opacity:1}
 .collapse{display:none}.collapse.in{display:block}
 .collapsing{position:relative;height:0;overflow:hidden;-webkit-transition:height .35s ease;transition:height .35s ease}
