@@ -43,3 +43,6 @@ img {
 .frontpage-content{
 	margin-top:40px;
 }
+.form-allowed-tags {
+    display:none;
+}
