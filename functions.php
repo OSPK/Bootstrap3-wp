@@ -68,6 +68,16 @@ add_action('wp_enqueue_scripts', 'bootstrapwp_styles_loader');
  * Load JavaScript and jQuery files for theme.
  *
  */
+
+function jquery_cdn() {
+   if (!is_admin()) {
+      wp_deregister_script('jquery');
+      wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js', false, '1.10.2');
+      wp_enqueue_script('jquery');
+      }
+   }
+add_action('init', 'jquery_cdn');
+
 function bootstrapwp_scripts_loader() {
 
     if (is_singular() && comments_open() && get_option('thread_comments')) {
