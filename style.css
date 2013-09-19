@@ -1,9 +1,9 @@
 /*
-Theme Name: BootstrapWP
-Theme URI: http://bootstrapwp.rachelbaker.me
-Author: Rachel Baker
-Author URI: http://www.rachelbaker.me
-Description: A semantic HTML/CSS framework base theme for WordPress Developers ported from Twitter Bootstrap
+Theme Name: Bootstrap3-WP
+Theme URI: http://opensource.com.pk
+Author: Waqas Ahmed
+Author URI: http://twitter.com/waqas_x
+Description: Rachel Baker's BootstrapWP updated to use Bootstrap 3.0
 Version: 1.0
 =======
 License: GNU General Public License
@@ -11,9 +11,11 @@ License URI: license.txt
 
 This theme, like WordPress, is licensed under the GPL.
 
-The development of BootstrapWP was powered by Sublime Text 2 and lots of Diet Coke.
-Use this starter theme to make something cool.  Please share the results with me via Twitter @rachelbaker.
-Enjoy!
+The original theme was created by @rachelbaker.
+
+I just upgraded it for use with Bootstrap 3
+
+- waqas (http://twitter.com/waqas_x)
 
 */
 /********************************************************
@@ -31,4 +33,7 @@ footer {
 background-color: darkgray;
 padding: 20px;
 margin-top: 20px;
+}
+img {
+	max-width: 100%;
 }
