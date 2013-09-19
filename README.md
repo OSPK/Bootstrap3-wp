@@ -1,4 +1,4 @@
-Bootstrapwp3
+Bootstrap3-wp
 ============
 Based on Rachel Baker's bootstrap Theme
 
