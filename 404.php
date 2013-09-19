@@ -8,15 +8,15 @@
 get_header(); ?>
 <div class="container">
     <div class="row">
-        <div class="span12">
+        <div class="col-md-12">
             <?php if (function_exists('bootstrapwp_breadcrumbs')) {
             bootstrapwp_breadcrumbs();
         } ?>
         </div>
     </div>
 
-   <div class="row content">
-       <div class="span8">
+  <div class="row content">
+      <div class="col-md-8">
 
             <header class="page-title">
                 <h1><?php _e('This is Embarrassing', 'bootstrapwp'); ?></h1>
@@ -27,17 +27,17 @@ get_header(); ?>
                 'bootstrapwp'
             ); ?></p>
 
-           <div class="well">
+          <div class="well-lg">
                <?php get_search_form(); ?>
-           </div>
+          </div>
 
-           <div class="row">
-               <div class="span4">
+          <div class="row">
+              <div class="col-md-6">
                    <h2>All Pages</h2>
                    <?php wp_page_menu(); ?>
-               </div>
-               <!--/.span4 -->
-               <div class="span4">
+              </div><!--/.col6 -->
+               
+              <div class="col-md-6">
                    <?php the_widget('WP_Widget_Recent_Posts'); ?>
 
                    <h2><?php _e('Most Used Categories', 'bootstrapwp'); ?></h2>
@@ -52,12 +52,13 @@ get_header(); ?>
                        )
                    ); ?>
                    </ul>
+              </div><!--/.col6 -->
+          </div><!--/.row-->
 
-               </div>
-               <!--/.span4 -->
-           </div>
-           <!--/.row -->
-       </div>
+      </div><!--/.col8-->
 
-    <?php get_sidebar(); ?>
-    <?php get_footer();
+        <?php get_sidebar(); ?>
+  </div><!--/.row-->
+
+</div><!--container-->
+<?php get_footer();?>

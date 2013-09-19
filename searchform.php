@@ -5,5 +5,4 @@
         <button class="btn btn-default search-submit" type="button">Search</button>
     	</span>
     </div><!-- /input-group -->
-  </div><!-- /.col-lg-12 -->
 </form><!-- /.form -->
