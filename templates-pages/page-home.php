@@ -13,31 +13,35 @@ get_header(); ?>
 
         <div class="jumbotron">
                 <h1><?php the_title();?></h1>
-                <?php the_content(); ?>
+                <h2><?php echo get_bloginfo ( 'description' );  ?></h2>
         </div><!--/.hero-unit -->
 
     <?php endwhile; endif; ?>
 
-    <div class="row">
-        <div class="col-md-4">
-            <?php
-            if (function_exists('dynamic_sidebar')) {
-                dynamic_sidebar("home-left");
-            } ?>
+        <div class="row">
+                <div class="col-md-4">
+                    <?php
+                    if (function_exists('dynamic_sidebar')) {
+                        dynamic_sidebar("home-left");
+                    } ?>
+                </div>
+                <div class="col-md-4">
+                    <?php
+                    if (function_exists('dynamic_sidebar')) {
+                        dynamic_sidebar("home-middle");
+                     } ?>
+                </div>
+                <div class="col-md-4">
+                    <?php
+                    if (function_exists('dynamic_sidebar')) {
+                        dynamic_sidebar("home-right");
+                    } ?>
+                </div>
+        </div><!--/.row -->
+
+        <div class="row content frontpage-content">
+            <?php the_content(); ?>
         </div>
-        <div class="col-md-4">
-            <?php
-            if (function_exists('dynamic_sidebar')) {
-                dynamic_sidebar("home-middle");
-             } ?>
-        </div>
-        <div class="col-md-4">
-            <?php
-            if (function_exists('dynamic_sidebar')) {
-                dynamic_sidebar("home-right");
-            } ?>
-        </div>
-    </div><!--/.row -->
 </div><!--/.container -->
 
 <?php get_footer(); ?>
