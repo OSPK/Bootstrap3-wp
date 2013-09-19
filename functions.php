@@ -162,7 +162,7 @@ function bootstrapwp_widgets_init() {
             'name'          => __('Footer Content', 'bootstrapwp'),
             'id'            => 'footer-content',
             'description'   => __('Footer text or acknowledgements', 'bootstrapwp'),
-            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'before_widget' => '<div id="%1$s" class="widget %2$s col-md-3">',
             'after_widget'  => '</div>',
             'before_title'  => '<h4>',
             'after_title'   => '</h4>'

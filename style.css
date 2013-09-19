@@ -34,6 +34,9 @@ background-color: darkgray;
 padding: 20px;
 margin-top: 20px;
 }
+.footer {
+	padding: 20px;
+}
 img {
 	max-width: 100%;
 }
