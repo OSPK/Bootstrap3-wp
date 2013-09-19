@@ -62,11 +62,11 @@ get_header(); ?>
                         </p>
                         <div class="well-lg">
                             <?php get_search_form(); ?>
-                
+                        </div><!--well-lg-->
              <?php endif;?>
 
              <?php bootstrapwp_content_nav('nav-below'); ?>
-        </div><!--8-->
+        </div><!--col-md-8-->
 
         <?php get_sidebar(); ?>
     </div><!--/.content-->
