@@ -26,6 +26,7 @@ get_header(); ?>
             <?php wp_link_pages( array('before' => '<div class="page-links">' . __('Pages:', 'bootstrapwp'), 'after' => '</div>')); ?>
             <?php edit_post_link(__('Edit', 'bootstrapwp'), '<span class="edit-link">', '</span>'); ?>
             <?php endwhile; // end of the loop. ?>
+            <?php comments_template(); ?>
         </div><!--/8cols-->
     <?php get_sidebar(); ?>
     </div>
