@@ -55,11 +55,9 @@ function bootstrapwp_images() {
  */
 function bootstrapwp_styles_loader() {
 
-    wp_enqueue_style('bootstrapwp-style', get_template_directory_uri() . '/assets/css/bootstrap.css', false, '1.0', 'all');
-    wp_enqueue_style('bootstrapwp-default', get_stylesheet_uri());
+    wp_enqueue_style('bootstrap3-wp-style', get_template_directory_uri() . '/assets/css/bootstrap.css', false, '1.0', 'all');
+    wp_enqueue_style('bootstrap3-wp-default', get_stylesheet_uri());
 
-    // registering scripts and styles for documentation templates
-    wp_register_style('docs-css', get_template_directory_uri() . '/templates-documentation/assets/css/docs.css', array('bootstrapwp-style'), '2.3.2', 'all');
 
 }
 add_action('wp_enqueue_scripts', 'bootstrapwp_styles_loader');
