@@ -69,6 +69,7 @@ add_action('wp_enqueue_scripts', 'bootstrapwp_styles_loader');
  *
  */
 
+//Load Jquery from Google CDN
 function jquery_cdn() {
    if (!is_admin()) {
       wp_deregister_script('jquery');
